@@ -1,0 +1,24 @@
+
+debug: true
+server:
+  port: 8082
+  tomcat:
+    uri-encoding: UTF-8
+  servlet:
+    context-path: /hello
+
+spring:
+  profiles:
+    active: prod
+
+---
+server:
+  port: 8086
+spring:
+  profiles: prod
+
+---
+server:
+  port: 8085
+spring:
+  profiles: dev
